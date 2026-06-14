@@ -1,71 +1,52 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Olalekan Babawale | Portfolio</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Olalekan Babawale | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital@0;1&family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
-      rel="stylesheet"
-      type="text/css"
     />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="container">
         <nav class="navbar-wrapper">
-          <div>
-            <h1 class="brand-title">
-              <a href="#">Olalekan Babawale</a>
-            </h1>
-          </div>
-
+          <h1 class="brand-title">
+            <a href="#">Olalekan Babawale</a>
+          </h1>
           <div class="nav-links">
-            <p><a href="#about">About</a></p>
-            <p><a href="#skills">Skills</a></p>
-            <p><a href="#portfolio">Portfolio</a></p>
-            <p><a href="#contact">Contact</a></p>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
           </div>
         </nav>
-        <hr />
       </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
+    <main>
       <section id="about">
         <div class="container">
-          <h2 class="section-title">About Me</h2>
-          <div class="col-sm-12 col-md-6">
-            <p>
+          <div class="about-text">
+            <h2 class="section-title">About Me</h2>
+            <p class="greeting">
               Hello, It's me,
-              <span class="my-name">Olalekan Babawale.</span> I'm a
+              <span class="my-name">Olalekan Babawale.</span>
+              I'm a
               <span id="software-developer">Software Developer</span>.
             </p>
-            <p class="short-biography pt-10 mt-4 text-justify">
+            <p class="short-biography">
               I'm a passionate software developer with expertise in building web
               and mobile applications. I love solving complex problems through
               clean, efficient code and creating user-friendly experiences.
             </p>
           </div>
-          <div class="col-sm-12 col-md-6">
+          <div class="about-image">
             <img
               src="./public/images/profile.jpg"
               alt="Olalekan Babawale"
@@ -78,8 +59,8 @@
       <section id="skills">
         <div class="container">
           <h2 class="section-title">Skills</h2>
-          <div class="skills-list row">
-            <div class="skill-item col-md-4">
+          <div class="skills-grid">
+            <div class="skill-card">
               <h3>Programming Languages</h3>
               <ul>
                 <li>JavaScript</li>
@@ -88,7 +69,7 @@
                 <li>Go</li>
               </ul>
             </div>
-            <div class="skill-item col-md-4">
+            <div class="skill-card">
               <h3>Frameworks & Libraries</h3>
               <ul>
                 <li>Odoo</li>
@@ -98,7 +79,7 @@
                 <li>...and more</li>
               </ul>
             </div>
-            <div class="skill-item col-md-4">
+            <div class="skill-card">
               <h3>Tools & Technologies</h3>
               <ul>
                 <li>Git</li>
@@ -114,60 +95,61 @@
       <section id="portfolio">
         <div class="container">
           <h2 class="section-title">Portfolio</h2>
-          <div class="portfolio-items row">
-            <div class="portfolio-item col-md-4">
-              <h3 class="project-title">Project One</h3>
+          <div class="portfolio-grid">
+            <div class="portfolio-card">
+              <h3>Project One</h3>
               <p>A web application for managing tasks and projects.</p>
             </div>
-            <div class="portfolio-item col-md-4">
-              <h3 class="project-title">Project Two</h3>
+            <div class="portfolio-card">
+              <h3>Project Two</h3>
               <p>A mobile app for tracking fitness activities.</p>
             </div>
-            <div class="portfolio-item col-md-4 pb-4">
-              <h3 class="project-title">Project Three</h3>
+            <div class="portfolio-card">
+              <h3>Project Three</h3>
               <p>A machine learning model for predicting housing prices.</p>
             </div>
           </div>
         </div>
       </section>
+
       <section id="contact">
         <div class="container">
           <h2 class="section-title">Contact</h2>
-          <div class="row contact-list">
-            <div class="col-sm-6 col-md-6">
+          <div class="contact-grid">
+            <div class="contact-item">
               <img
                 src="./public/images/x_icon.png"
-                alt="Twitter Icon"
+                alt="X/Twitter"
                 class="icon"
               />
               <a href="https://twitter.com/LekanBabawale" target="_blank"
                 >@LekanBabawale</a
               >
             </div>
-            <div class="col-sm-6 col-md-6">
+            <div class="contact-item">
               <img
                 src="./public/images/email_icon.webp"
-                alt="Email Icon"
+                alt="Email"
                 class="icon"
               />
               <a href="mailto:babawaleolalekan@gmail.com"
                 >babawaleolalekan@gmail.com</a
               >
             </div>
-            <div class="col-sm-6 col-md-6">
+            <div class="contact-item">
               <img
                 src="./public/images/github_icon.png"
-                alt="Github Icon"
+                alt="GitHub"
                 class="icon"
               />
               <a href="https://github.com/obabawale" target="_blank"
                 >obabawale</a
               >
             </div>
-            <div class="col-sm-6 col-md-6">
+            <div class="contact-item">
               <img
                 src="./public/images/linkedin_icon.png"
-                alt="LinkedIn Icon"
+                alt="LinkedIn"
                 class="icon"
               />
               <a
@@ -181,28 +163,10 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="text-center footer">
-      <br />
+    <footer class="footer">
       <div class="container">
         <p>&copy; 2024 Olalekan Babawale. All rights reserved.</p>
       </div>
     </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
