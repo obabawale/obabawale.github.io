@@ -242,7 +242,6 @@ section {
   font-weight: 400;
 }
 
-/* --- Portfolio --- */
 #portfolio {
   background: var(--dark);
   color: #fff;
@@ -289,7 +288,7 @@ section {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* --- Contact --- */
+
 #contact {
   background: var(--light);
 }
@@ -336,7 +335,7 @@ section {
   color: var(--primary);
 }
 
-/* --- Footer --- */
+
 .footer {
   background: var(--dark);
   color: rgba(255, 255, 255, 0.7);
@@ -345,7 +344,7 @@ section {
   font-size: 0.85rem;
 }
 
-/* --- Responsive --- */
+
 @media (max-width: 768px) {
   body {
     font-size: 16px;
@@ -375,6 +374,10 @@ section {
 
   #about .container {
     flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-text h2 {
     text-align: center;
   }
 
