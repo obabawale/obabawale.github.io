@@ -50,25 +50,28 @@
 
     <!-- Main Content -->
     <main class="main-content">
-      <section class="container about-me">
-        <div class="col-sm-12 col-md-6">
+      <section id="about">
+        <div class="container">
           <h2 class="section-title">About Me</h2>
-          <p>
-            Hello, It's me, <span class="my-name">Olalekan Babawale.</span> I'm
-            a <span id="software-developer">Software Developer</span>.
-          </p>
-          <p class="short-biography pt-10 mt-4 text-justify">
-            I'm a passionate software developer with expertise in building web
-            and mobile applications. I love solving complex problems through
-            clean, efficient code and creating user-friendly experiences.
-          </p>
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <img
-            src="./public/images/profile.jpg"
-            alt="Olalekan Babawale"
-            class="profile-image"
-          />
+          <div class="col-sm-12 col-md-6">
+            <p>
+              Hello, It's me,
+              <span class="my-name">Olalekan Babawale.</span> I'm a
+              <span id="software-developer">Software Developer</span>.
+            </p>
+            <p class="short-biography pt-10 mt-4 text-justify">
+              I'm a passionate software developer with expertise in building web
+              and mobile applications. I love solving complex problems through
+              clean, efficient code and creating user-friendly experiences.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <img
+              src="./public/images/profile.jpg"
+              alt="Olalekan Babawale"
+              class="profile-image"
+            />
+          </div>
         </div>
       </section>
 
@@ -120,7 +123,7 @@
               <h3 class="project-title">Project Two</h3>
               <p>A mobile app for tracking fitness activities.</p>
             </div>
-            <div class="portfolio-item col-md-4">
+            <div class="portfolio-item col-md-4 pb-4">
               <h3 class="project-title">Project Three</h3>
               <p>A machine learning model for predicting housing prices.</p>
             </div>
@@ -130,8 +133,8 @@
       <section id="contact">
         <div class="container">
           <h2 class="section-title">Contact</h2>
-          <ul>
-            <li>
+          <div class="row contact-list">
+            <div class="col-sm-6 col-md-6">
               <img
                 src="./public/images/x_icon.png"
                 alt="Twitter Icon"
@@ -140,8 +143,8 @@
               <a href="https://twitter.com/LekanBabawale" target="_blank"
                 >@LekanBabawale</a
               >
-            </li>
-            <li>
+            </div>
+            <div class="col-sm-6 col-md-6">
               <img
                 src="./public/images/email_icon.webp"
                 alt="Email Icon"
@@ -150,8 +153,8 @@
               <a href="mailto:babawaleolalekan@gmail.com"
                 >babawaleolalekan@gmail.com</a
               >
-            </li>
-            <li>
+            </div>
+            <div class="col-sm-6 col-md-6">
               <img
                 src="./public/images/github_icon.png"
                 alt="Github Icon"
@@ -160,8 +163,8 @@
               <a href="https://github.com/obabawale" target="_blank"
                 >obabawale</a
               >
-            </li>
-            <li>
+            </div>
+            <div class="col-sm-6 col-md-6">
               <img
                 src="./public/images/linkedin_icon.png"
                 alt="LinkedIn Icon"
@@ -172,16 +175,16 @@
                 target="_blank"
                 >Olalekan Babawale</a
               >
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="text-center footer">
+      <br />
       <div class="container">
-        <hr />
         <p>&copy; 2024 Olalekan Babawale. All rights reserved.</p>
       </div>
     </footer>
