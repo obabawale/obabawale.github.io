@@ -1,9 +1,9 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', 'Roboto', sans-serif;
   font-weight: 300;
   background-color: #121e39;
   max-width: 100%;
-  font-size: 16px;
+  font-size: 24px;
   color:hsl(0, 0%, 100%);
 }
 
@@ -42,10 +42,10 @@ header {
   min-height: 100vh;
 }
 
-.about-me {
+/* .about-me {
   display: flex;
   align-items: center;
-}
+} */
 
 .about-me .col-md-6:last-child {
   display: flex;
@@ -54,10 +54,22 @@ header {
 
 .profile-image {
   display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 25% 10%;
 }
 
 .footer {
   text-align: center;
   color: #fff;
   padding: 20px 0;
+}
+
+#software-developer {
+  color: #d02c91;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  color: #e2278a;
 }

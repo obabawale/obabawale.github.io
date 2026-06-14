@@ -13,6 +13,12 @@
       type="text/css"
     />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -24,11 +30,10 @@
           </div>
 
           <div class="nav-links">
-            <p>Home</p>
-            <p>About</p>
-            <p>Skills</p>
-            <p>Portfolio</p>
-            <p>Contact</p>
+            <p><a href="#about">About</a></p>
+            <p><a href="#skills">Skills</a></p>
+            <p><a href="#portfolio">Portfolio</a></p>
+            <p><a href="#contact">Contact</a></p>
           </div>
         </nav>
         <hr />
@@ -39,12 +44,19 @@
     <main class="main-content">
       <section class="container about-me">
         <div class="col-sm-12 col-md-6">
-          <h5>Hello It's me</h5>
-          <h2>Olalekan Babawale</h2>
+          <h2 class="section-title">About</h2>
+          <h4 id="hello-heading">Hello, It's Me</h4>
+          <h1 id="my-name">Olalekan Babawale</h1>
           <div>
-            <span>And I am a </span>
-            <span>Software Developer</span>
-            <p class="short-biography pt-4 mt-4">
+            <div class="p-6">
+              <span>And I am a </span>
+              <span
+                id="software-developer"
+                class="pb-4 font-weight-bold text-uppercase"
+                >Software Developer</span
+              >
+            </div>
+            <p class="short-biography pt-10 mt-4 text-justify">
               I'm a passionate software developer with expertise in building web
               and mobile applications. I love solving complex problems through
               clean, efficient code and creating user-friendly experiences.
@@ -53,12 +65,99 @@
         </div>
         <div class="col-sm-12 col-md-6">
           <img
-            src="./images/WhatsApp Image 2026-05-31 at 07.53.22.jpeg"
-            height="400px"
-            width="400px"
+            src="./images/profile.jpg"
             alt="Olalekan Babawale"
             class="profile-image"
           />
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-list row">
+            <div class="skill-item col-md-4">
+              <h3>Programming Languages</h3>
+              <ul>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Go</li>
+              </ul>
+            </div>
+            <div class="skill-item col-md-4">
+              <h3>Frameworks & Libraries</h3>
+              <ul>
+                <li>Odoo</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Django</li>
+                <li>...and more</li>
+              </ul>
+            </div>
+            <div class="skill-item col-md-4">
+              <h3>Tools & Technologies</h3>
+              <ul>
+                <li>Git</li>
+                <li>Docker</li>
+                <li>AWS</li>
+                <li>Firebase</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="container">
+          <h2 class="section-title">Portfolio</h2>
+          <div class="portfolio-items row">
+            <div class="portfolio-item col-md-4">
+              <h3>Project One</h3>
+              <p>A web application for managing tasks and projects.</p>
+            </div>
+            <div class="portfolio-item col-md-4">
+              <h3>Project Two</h3>
+              <p>A mobile app for tracking fitness activities.</p>
+            </div>
+            <div class="portfolio-item col-md-4">
+              <h3>Project Three</h3>
+              <p>A machine learning model for predicting housing prices.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <ul>
+            <li>
+              X (Twitter):
+              <a href="https://twitter.com/LekanBabawale" target="_blank"
+                >@LekanBabawale</a
+              >
+            </li>
+            <li>
+              Email:
+              <a href="mailto:babawaleolalekan@gmail.com"
+                >babawaleolalekan@gmail.com</a
+              >
+            </li>
+            <li>
+              Github:
+              <a href="https://github.com/obabawale" target="_blank"
+                >obabawale</a
+              >
+            </li>
+            <li>
+              LinkedIn:
+              <a
+                href="https://www.linkedin.com/in/olalekanbabawale"
+                target="_blank"
+                >Olalekan Babawale</a
+              >
+            </li>
+          </ul>
         </div>
       </section>
     </main>
