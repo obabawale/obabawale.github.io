@@ -1,32 +1,62 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  background-color: #f4f4f4;
+  background-color: #121e39;
+  max-width: 100%;
+  font-size: 16px;
+  color:hsl(0, 0%, 100%);
 }
 
 header {
   padding: 20px 0;
-  background-color: #333a41;
   color: #fff;
 }
 
-header nav {
+.navbar-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 100%;
+  width: 100%;
+}
+
+.brand-title {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links p {
+  margin: 0;
+  cursor: pointer;
 }
 
 .main-content {
   margin-top: 50px;
-  max-width: 800px;
   margin-left: auto;
   margin-right: auto; 
   min-height: 100vh;
 }
 
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+.about-me .col-md-6:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-image {
+  display: block;
+}
+
 .footer {
-  background-color: #333a41;
   text-align: center;
   color: #fff;
   padding: 20px 0;
